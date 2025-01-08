@@ -10,8 +10,8 @@ with open('houseprice.pkl', 'rb') as f:
 st.title("Uy narxini bashorat qilish")
 bedrooms = st.number_input("Xonalar soni", min_value=1, step=1)
 bathrooms = st.number_input("Hammomlar soni", min_value=1, step=1)
-sqft_living = st.number_input("Yashash maydoni", min_value=500, step=50)
 floors = st.number_input("Qavatlar soni", min_value=1, step=1)
+sqft_living = st.number_input("Yashash maydoni", min_value=500, step=50)
 yr_built = st.number_input("Qurilgan yili", min_value=1900, max_value=2023, step=1)
 
 # Bashorat qilish
