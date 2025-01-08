@@ -23,5 +23,5 @@ if st.button("Narxni bashorat qilish"):
         'floors': [floors],
         'yr_built': [yr_built]
     })
-    prediction = model.predict(input_data)
+    prediction = model.predict(input_data).abs()
     st.success(f"Bashorat qilingan narx: ${prediction[0]:,.2f}")
